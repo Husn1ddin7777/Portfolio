@@ -8,6 +8,8 @@ import GridTile from "./GridTile";
 import Projects from "./projects";
 import Work from "./work";
 
+const TITLE_LENGTH = 'tajriba'.length;
+
 const Experience = () => {
   const titleRef = useRef<THREE.Group>(null);
   const groupRef = useRef<THREE.Group>(null);
@@ -40,7 +42,7 @@ const Experience = () => {
   });
 
   const getTitle = () => {
-    const title = 'experience'.toUpperCase();
+    const title = 'tajriba'.toUpperCase();
     return title.split('').map((char, i) => {
       const diff = isMobile ? 0.4 : 0.8;
       return (
@@ -56,19 +58,19 @@ const Experience = () => {
         <shadowMaterial opacity={0.1} />
       </mesh> */}
       <group rotation={[0, 0, Math.PI / 2]}>
-        <group ref={titleRef} position={[isMobile ? -1.8 : -3.6, 2, -2]}>
+        <group ref={titleRef} position={[-((TITLE_LENGTH - 1) * (isMobile ? 0.4 : 0.8)) / 2, 2, -2]}>
           {getTitle()}
         </group>
 
         <group position={[0, -1, 0]} ref={groupRef}>
-          <GridTile title='WORK AND EDUCATION'
+          <GridTile title="ISH VA TA'LIM"
             id="work"
             color='#b9c6d6'
             textAlign='left'
             position={new THREE.Vector3(isMobile ? -1 : -2, 0, isMobile ? 0.4 : 0)}>
             <Work/>
           </GridTile>
-          <GridTile title='PROJECTS & VENTURES'
+          <GridTile title='LOYIHALAR VA BIZNES'
             id="projects"
             color='#bdd1e3'
             textAlign='right'

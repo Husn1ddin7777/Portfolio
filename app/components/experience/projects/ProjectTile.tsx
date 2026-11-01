@@ -172,7 +172,7 @@ const ProjectTile = ({ project, index, position, rotation, activeId, onClick, da
               color="white"
               position={[-0.4, 0.15, 0.2]}
               fontSize={0.25}>
-              VIEW ↗
+              KO'RISH ↗
             </Text>
           </group>
         )}

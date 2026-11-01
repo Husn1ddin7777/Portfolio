@@ -15,9 +15,9 @@ const vercettiFont = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://example.com/'),
-  title: "Husniddin | Economist & Founder",
-  description: "Economist and founder from Tashkent, building AI-powered products for Uzbekistan: LexiLift, Afnan.CRM, websiite.uz and more.",
-  keywords: "Husniddin, Husniddin Izzatullayev, Economist, Founder, LexiLift, Afnan.CRM, websiite.uz, Tashkent, Uzbekistan, Startups, Portfolio",
+  title: "Husniddin | Iqtisodchi va asoschi",
+  description: "Toshkentlik iqtisodchi va asoschi. O'zbekiston uchun AI asosidagi mahsulotlar quraman: LexiLift, Afnan.CRM, websiite.uz va boshqalar.",
+  keywords: "Husniddin, Husniddin Izzatullayev, iqtisodchi, asoschi, LexiLift, Afnan.CRM, websiite.uz, Toshkent, O'zbekiston, startap, portfolio",
   authors: [{ name: "Husniddin" }],
   creator: "Husniddin",
   publisher: "Husniddin",
@@ -37,16 +37,16 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Husniddin | Economist & Founder",
-    description: "Economist by training, founder by choice. Building products for Uzbekistan.",
-    siteName: "Husniddin's Portfolio",
-    locale: "en_US",
+    title: "Husniddin | Iqtisodchi va asoschi",
+    description: "Kasbim iqtisodchi, tanlovim asoschilik. O'zbekiston uchun mahsulotlar quraman.",
+    siteName: "Husniddin portfoliosi",
+    locale: "uz_UZ",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Husniddin | Economist & Founder",
-    description: "Economist by training, founder by choice. Building products for Uzbekistan.",
+    title: "Husniddin | Iqtisodchi va asoschi",
+    description: "Kasbim iqtisodchi, tanlovim asoschilik. O'zbekiston uchun mahsulotlar quraman.",
   },
 };
 
@@ -63,7 +63,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="overscroll-y-none">
+    <html lang="uz" className="overscroll-y-none">
       <body
         className={`${soriaFont.variable} ${vercettiFont.variable} font-sans antialiased`}
       >

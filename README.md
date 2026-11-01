@@ -34,7 +34,7 @@ Optional environment variables:
 
 ## Deploy
 
-The site is a static export (`output: 'export'`), deployed on Vercel from this repository.
+The site is a static export (`output: 'export'`), deployed on Vercel from this repository: every push to `main` goes live at https://husniddin-three.vercel.app
 
 ## Tech stack
 
